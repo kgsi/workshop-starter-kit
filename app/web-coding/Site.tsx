@@ -1,8 +1,9 @@
-import FeedbackSection from "./FeedbackSection";
-
-const imgFrame2147225152 = "http://localhost:3845/assets/bdd39bad8748bc2dfdb194f747956ce5885984a1.png";
-const imgImage1 = "http://localhost:3845/assets/5ee6c3ddb375c4420854df43ef2ebdc5da72cff1.png";
-const imgFrame = "http://localhost:3845/assets/ad2e15eab256166f480cf515d2ec35af4ea395c1.svg";
+const imgFrame2147225152 =
+  "http://localhost:3845/assets/bdd39bad8748bc2dfdb194f747956ce5885984a1.png";
+const imgImage1 =
+  "http://localhost:3845/assets/5ee6c3ddb375c4420854df43ef2ebdc5da72cff1.png";
+const imgFrame =
+  "http://localhost:3845/assets/ad2e15eab256166f480cf515d2ec35af4ea395c1.svg";
 
 export default function Site() {
   return (
@@ -20,7 +21,11 @@ export default function Site() {
           data-name="Logo Container"
           data-node-id="5:36"
         >
-          <div className="relative shrink-0 size-12" data-name="Frame" data-node-id="5:37">
+          <div
+            className="relative shrink-0 size-12"
+            data-name="Frame"
+            data-node-id="5:37"
+          >
             <img alt="" className="block max-w-none size-full" src={imgFrame} />
           </div>
           <div
@@ -91,13 +96,6 @@ export default function Site() {
           data-node-id="5:47"
           style={{ backgroundImage: `url('${imgImage1}')` }}
         />
-      </div>
-      {/* Added section from Figma (node 1:27275) */}
-      <div className="w-full flex items-center justify-center">
-        {/* Center the section within the black background */}
-        <div className="w-[968px]">
-          <FeedbackSection />
-        </div>
       </div>
     </div>
   );

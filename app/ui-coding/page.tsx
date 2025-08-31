@@ -1,16 +1,15 @@
-"use client"
+"use client";
 
-import { Button, ThemeProvider, createTheme } from "smarthr-ui"
+import { Button, ThemeProvider, createTheme, IntlProvider } from "smarthr-ui";
 
-const theme = createTheme()
+const theme = createTheme();
 
 export default function UICodingPage() {
   return (
-    <ThemeProvider theme={theme}>
-      <div className="p-6">
+    <IntlProvider locale="ja">
+      <ThemeProvider theme={theme}>
         <Button>Button</Button>
-      </div>
-    </ThemeProvider>
-  )
+      </ThemeProvider>
+    </IntlProvider>
+  );
 }
-
